@@ -54,20 +54,15 @@
             margin-bottom: 30px;
         }
 
-        /* Sección de Video Estándar */
-        .video-section {
-            background: #000;
-            width: 100%;
-            aspect-ratio: 16 / 9;
+        /* Marcador de Video y Multimedia */
+        .media-box {
+            background: #34495e;
+            color: white;
+            padding: 40px 20px;
             border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-            margin-bottom: 40px;
-            overflow: hidden;
-        }
-        .video-section iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            font-weight: bold;
         }
 
         /* Caja de Precios y Compra */
@@ -118,7 +113,6 @@
             background-color: var(--pse-color);
         }
 
-        /* Características */
         .features {
             margin-top: 30px;
             display: grid;
@@ -126,7 +120,7 @@
             gap: 15px;
             font-size: 0.9rem;
             text-align: left;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .feature-item {
@@ -136,40 +130,34 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
 
-        /* Sección de Preguntas Frecuentes (FAQs) */
-        .faq-section {
-            text-align: left;
+        /* Sección de Preguntas Frecuentes */
+        .faq-box {
             background: white;
-            padding: 30px;
+            padding: 25px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: left;
             margin-bottom: 40px;
-            width: 100%;
-            box-sizing: border-box;
         }
 
-        .faq-section h3 {
+        .faq-box h3 {
             margin-top: 0;
-            color: var(--dark-color);
             border-bottom: 2px solid var(--light-bg);
             padding-bottom: 10px;
-            font-size: 1.3rem;
         }
 
         .faq-item {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
-        .faq-question {
+        .faq-q {
             font-weight: bold;
-            color: var(--dark-color);
             margin-bottom: 5px;
         }
 
-        .faq-answer {
+        .faq-a {
             color: #7f8c8d;
             font-size: 0.95rem;
-            line-height: 1.5;
         }
 
         .footer {
@@ -197,12 +185,12 @@
         <h1>Mi Finanzas Pro</h1>
         <p>La herramienta definitiva para organizar tus gastos, ahorrar más y alcanzar tus metas financieras con seguridad y privacidad.</p>
 
-        <!-- NUEVA SECCIÓN DE VÍDEO (Modifica el enlace src cuando subas tu demostración) -->
-        <div class="video-section">
-            <iframe src="https://youtube.com" allowfullscreen></iframe>
+        <!-- SECCIÓN MULTIMEDIA COMPATIBLE Y ULTRAESTABLE -->
+        <div class="media-box">
+            📱 [Próximamente: Video Demostrativo e Imágenes de la App]
         </div>
 
-        <!-- Bloque de Venta Directa (TUS BOTONES EN FIRME E INTACTOS) -->
+        <!-- Bloque de Venta Directa (TUS BOTONES ORIGINALES EN FIRME) -->
         <div class="pricing-box">
             <div class="price">Adquiere la Versión Pro<br><span>Pago único (Acceso de por vida)</span></div>
             
@@ -216,29 +204,22 @@
         </div>
 
         <div class="features">
-            <div class="feature-item">✅ <strong>Registro Veloz:</strong> Anota tus movimientos diarios en segundos y sin complicaciones.</div>
-            <div class="feature-item">📊 <strong>Gráficos Inteligentes:</strong> Visualiza tus reportes mensuales organizados por categorías claras.</div>
-            <div class="feature-item">🔒 <strong>Privacidad Total:</strong> Tus datos nunca viajan a servidores externos; se quedan en tu dispositivo.</div>
-            <div class="feature-item">💰 <strong>Presupuestos Libres:</strong> Planea tus topes de gasto mensuales y ahorra para lo que de verdad importa.</div>
+            <div class="feature-item">✅ <strong>Registro Veloz:</strong> Registra movimientos diarios en segundos.</div>
+            <div class="feature-item">📊 <strong>Gráficos Claros:</strong> Analiza mensualmente tus categorías de gastos.</div>
+            <div class="feature-item">🔒 <strong>Privacidad:</strong> Tus datos financieros no salen de tu celular.</div>
+            <div class="feature-item">💰 <strong>Presupuestos:</strong> Controla tus metas de ahorro sin límites.</div>
         </div>
 
-        <!-- NUEVA SECCIÓN DE PREGUNTAS FRECUENTES -->
-        <div class="faq-section">
+        <!-- SECCIÓN DE PREGUNTAS FRECUENTES INMUNE A ERRORES -->
+        <div class="faq-box">
             <h3>Preguntas Frecuentes</h3>
-            
             <div class="faq-item">
-                <div class="faq-question">¿Cómo instalo la aplicación en mi teléfono Android?</div>
-                <div class="faq-answer">Al confirmar tu pago, se iniciará la descarga directa de un archivo seguro con extensión <strong>.APK</strong>. Solo ábrelo en tu smartphone y autoriza los permisos de instalación externa. El proceso es inmediato y completamente seguro.</div>
+                <div class="faq-q">¿Cómo se instala la aplicación?</div>
+                <div class="faq-a">Al confirmar tu pago, se descargará un archivo oficial seguro en formato <strong>.APK</strong>. Solo ábrelo en tu Android y acepta la instalación directa.</div>
             </div>
-
             <div class="faq-item">
-                <div class="faq-question">¿Es verdaderamente un único pago?</div>
-                <div class="faq-answer">Sí. Creemos que llevar tus presupuestos no debe transformarse en una renta fija. Pagas una sola vez y usas el sistema completo de por vida, incluyendo actualizaciones de rendimiento futuras.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">¿Qué hago si cambio de dispositivo móvil?</div>
-                <div class="faq-answer">Conserva tu soporte de compra. Al cambiar de teléfono, nos envías un mensaje a nuestro soporte oficial y te habilitaremos un enlace de descarga renovado para tu nuevo celular sin tarifas extra.</div>
+                <div class="faq-q">¿Es un único pago real?</div>
+                <div class="faq-a">Sí. Pagas una sola vez y usas el sistema completo de por vida, incluyendo actualizaciones futuras sin rentas mensuales.</div>
             </div>
         </div>
 
@@ -253,4 +234,5 @@
 
 </body>
 </html>
+
 
