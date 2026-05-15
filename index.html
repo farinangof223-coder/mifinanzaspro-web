@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Finanzas Pro - Toma el control de tu dinero</title>
-    
-    <!-- SCRIPT DE INFRAESTRUCTURA DE PAYPAL CON TU CLIENT ID EN VIVO -->
-    <script src="https://paypal.com"></script>
-
     <style>
         :root {
             --primary-color: #2ecc71; /* Verde éxito */
             --dark-color: #2c3e50;
             --light-bg: #f4f7f6;
+            --paypal-color: #0070ba;
             --pse-color: #ff6b00;
         }
 
@@ -79,15 +76,8 @@
             font-weight: normal;
         }
 
-        /* Contenedor del botón de PayPal */
-        .paypal-container-wrapper {
-            margin: 20px 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        .btn-pse {
-            background-color: var(--pse-color);
+        /* Estilo general para los botones de pago */
+        .btn-payment {
             color: white;
             padding: 15px 30px;
             text-decoration: none;
@@ -96,12 +86,22 @@
             display: block;
             margin: 15px 0;
             font-size: 1.1rem;
-            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.2);
-            transition: transform 0.2s;
+            transition: transform 0.2s, opacity 0.2s;
         }
 
-        .btn-pse:hover {
+        .btn-payment:hover {
             transform: translateY(-2px);
+            opacity: 0.95;
+        }
+
+        .btn-paypal {
+            background-color: var(--paypal-color);
+            box-shadow: 0 4px 15px rgba(0, 112, 186, 0.3);
+        }
+
+        .btn-pse {
+            background-color: var(--pse-color);
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
         }
 
         .features {
@@ -149,13 +149,11 @@
         <div class="pricing-box">
             <div class="price">Adquiere la Versión Pro<br><span>Pago único (Acceso de por vida)</span></div>
             
-            <!-- RENDERIZADOR NATIVO DEL BOTÓN AMARILLO DE PAYPAL -->
-            <div class="paypal-container-wrapper">
-                <div id="paypal-container-Q3BFSCX229V7G"></div>
-            </div>
+            <!-- BOTÓN ENLACE REAL DE PAYPAL (INMUNE A ERRORES) -->
+            <a href="https://paypal.com" target="_blank" class="btn-payment btn-paypal">Pagar con PayPal / Tarjeta Internacional</a>
             
-            <!-- BOTÓN EN DIRECTO PARA EVITAR BLOQUEOS EN CELULARES -->
-            <a href="https://payco.link" class="btn-pse">Pagar con PSE (Colombia)</a>
+            <!-- BOTÓN ENLACE REAL DE EPAYCO (PSE) -->
+            <a href="https://payco.link" target="_blank" class="btn-payment btn-pse">Pagar con PSE (Colombia)</a>
             
             <p style="font-size: 0.85rem; margin: 15px 0 0 0; color: #95a5a6;">🔒 Compra 100% segura. Tras el pago, recibirás el enlace de descarga directa del instalador APK.</p>
         </div>
@@ -176,14 +174,6 @@
         </div>
     </div>
 
-    <!-- EJECUCIÓN DEL PROCESO DE RENDERIZADO SEGURO DE PAYPAL -->
-    <script>
-      if (window.paypal) {
-        window.paypal.HostedButtons({
-          hostedButtonId: "Q3BFSCX229V7G",
-        }).render("#paypal-container-Q3BFSCX229V7G");
-      }
-    </script>
-
 </body>
 </html>
+
