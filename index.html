@@ -60,7 +60,7 @@
             padding: 30px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            margin-bottom: 40px; /* Espacio extra para que no se solape en celulares */
+            margin-bottom: 30px;
         }
 
         .price {
@@ -102,15 +102,13 @@
             background-color: var(--pse-color);
         }
 
-        /* Características - Ubicadas abajo de forma segura */
         .features {
-            margin-top: 20px;
+            margin-top: 30px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
             font-size: 0.9rem;
             text-align: left;
-            margin-bottom: 40px;
         }
 
         .feature-item {
@@ -118,40 +116,6 @@
             padding: 12px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-        }
-
-        /* Sección de Preguntas Frecuentes - Agregada al final para no entorpecer clics */
-        .faq-box {
-            background: white;
-            padding: 25px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            text-align: left;
-            margin-bottom: 40px;
-            margin-top: 20px;
-        }
-
-        .faq-box h3 {
-            margin-top: 0;
-            border-bottom: 2px solid var(--light-bg);
-            padding-bottom: 10px;
-            color: var(--dark-color);
-        }
-
-        .faq-item {
-            margin-bottom: 15px;
-        }
-
-        .faq-q {
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: var(--dark-color);
-        }
-
-        .faq-a {
-            color: #7f8c8d;
-            font-size: 0.95rem;
-            line-height: 1.5;
         }
 
         .footer {
@@ -179,38 +143,24 @@
         <h1>Mi Finanzas Pro</h1>
         <p>La herramienta definitiva para organizar tus gastos, ahorrar más y alcanzar tus metas financieras con seguridad y privacidad.</p>
 
-        <!-- Bloque de Venta Directa (TUS BOTONES ORIGINALES E INTACTOS) -->
+        <!-- Bloque de Venta Directa -->
         <div class="pricing-box">
             <div class="price">Adquiere la Versión Pro<br><span>Pago único (Acceso de por vida)</span></div>
             
-            <!-- TU LINK REAL DE PAYPAL INTEGRADO -->
-            <a href="https://paypal.com" target="_blank" class="btn-payment btn-paypal">Pagar con PayPal / Tarjeta</a>
+            <!-- ENLACE DE PAYPAL REESTRUCTURADO PARA CARGAR EN LA MISMA PESTAÑA -->
+            <a href="https://www.paypal.com/ncp/payment/Q3BFSCX229V7G" class="btn-payment btn-paypal">Pagar con PayPal / Tarjeta</a>
             
-            <!-- TU LINK REAL DE EPAYCO INTEGRADO -->
-            <a href="https://payco.link" target="_blank" class="btn-payment btn-pse">Pagar con PSE (Colombia)</a>
+            <!-- TU ENLACE REAL DE EPAYCO INTEGRADO Y REESTRUCTURADO -->
+            <a href="https://payco.link" class="btn-payment btn-pse">Pagar con PSE (Colombia)</a>
             
             <p style="font-size: 0.85rem; margin: 15px 0 0 0; color: #95a5a6;">🔒 Compra 100% segura. Tras el pago, recibirás el enlace de descarga directa del instalador APK.</p>
         </div>
 
-        <!-- Características -->
         <div class="features">
             <div class="feature-item">✅ Registro de gastos rápido</div>
             <div class="feature-item">📊 Gráficos inteligentes</div>
             <div class="feature-item">🔒 Datos 100% privados (Sin Nube)</div>
             <div class="feature-item">💰 Control de presupuestos ilimitados</div>
-        </div>
-
-        <!-- SECCIÓN DE PREGUNTAS FRECUENTES -->
-        <div class="faq-box">
-            <h3>Preguntas Frecuentes</h3>
-            <div class="faq-item">
-                <div class="faq-q">¿Cómo se instala la aplicación?</div>
-                <div class="faq-a">Al confirmar tu pago, se descargará un archivo ejecutable seguro en formato <strong>.APK</strong>. Solo ábrelo en tu dispositivo Android y acepta los permisos de instalación directa.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">¿Es un único pago para siempre?</div>
-                <div class="faq-a">Sí. Pagas una sola vez y tienes derecho a usar la aplicación de forma ilimitada para siempre, incluyendo todas las actualizaciones futuras de rendimiento.</div>
-            </div>
         </div>
 
         <div class="footer">
@@ -224,3 +174,4 @@
 
 </body>
 </html>
+
