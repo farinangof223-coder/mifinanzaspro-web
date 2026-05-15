@@ -22,14 +22,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
         }
 
         .container {
-            max-width: 600px;
+            max-width: 700px;
             padding: 40px 20px;
+            text-align: center;
         }
 
         .logo {
@@ -42,43 +40,62 @@
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 10px;
             color: var(--dark-color);
         }
 
-        p {
-            font-size: 1.1rem;
+        .subtitle {
+            font-size: 1.2rem;
             line-height: 1.6;
             color: #7f8c8d;
             margin-bottom: 30px;
         }
 
+        /* Sección de Video */
+        .video-section {
+            background: #000;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+        .video-section iframe, .video-section video {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
         /* Caja de Precios y Compra */
         .pricing-box {
             background: white;
-            padding: 30px;
-            border-radius: 20px;
+            padding: 35px;
+            border-radius: 25px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         .price {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: bold;
             color: var(--dark-color);
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
 
-        .price span {
+        .price-sub {
             font-size: 1rem;
-            color: #7f8c8d;
-            font-weight: normal;
+            color: var(--primary-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
         }
 
         .btn-payment {
             color: white;
-            padding: 15px 30px;
+            padding: 16px 30px;
             text-decoration: none;
             font-weight: bold;
             border-radius: 50px;
@@ -94,42 +111,76 @@
             opacity: 0.9;
         }
 
-        .btn-paypal {
-            background-color: var(--paypal-color);
-        }
+        .btn-paypal { background-color: var(--paypal-color); }
+        .btn-pse { background-color: var(--pse-color); }
 
-        .btn-pse {
-            background-color: var(--pse-color);
-        }
-
+        /* Características */
         .features {
-            margin-top: 30px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
-            font-size: 0.9rem;
+            margin-bottom: 40px;
             text-align: left;
         }
 
         .feature-item {
             background: white;
-            padding: 12px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            font-size: 1rem;
+        }
+
+        /* Sección de Preguntas Frecuentes (FAQs) */
+        .faq-section {
+            text-align: left;
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .faq-section h3 {
+            margin-top: 0;
+            color: var(--dark-color);
+            border-bottom: 2px solid var(--light-bg);
+            padding-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: var(--dark-color);
+            margin-bottom: 5px;
+        }
+
+        .faq-answer {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
 
         .footer {
-            margin-top: 50px;
+            margin-top: 20px;
             font-size: 0.85rem;
+            text-align: center;
         }
 
         .footer a {
             color: var(--primary-color);
             text-decoration: none;
+            font-weight: bold;
         }
 
         @media (max-width: 480px) {
-            h1 { font-size: 2rem; }
+            h1 { font-size: 2.2rem; }
             .features { grid-template-columns: 1fr; }
         }
     </style>
@@ -137,41 +188,71 @@
 <body>
 
     <div class="container">
-        <!-- Tu logo subido a GitHub -->
+        <!-- Logo oficial -->
         <img src="logo.png" alt="Mi Finanzas Pro Logo" class="logo">
 
         <h1>Mi Finanzas Pro</h1>
-        <p>La herramienta definitiva para organizar tus gastos, ahorrar más y alcanzar tus metas financieras con seguridad y privacidad.</p>
+        <p class="subtitle">La herramienta definitiva para organizar tus gastos, ahorrar más y alcanzar tus metas financieras con seguridad y privacidad total.</p>
+
+        <!-- SECCIÓN DE VÍDEO (REEMPLAZA EL LINK DE YOUTUBE CUANDO LO TENGAS) -->
+        <div class="video-section">
+            <!-- He dejado un contenedor de YouTube listo. Solo cambiarás el código del final por el tuyo -->
+            <iframe src="https://youtube.com" allowfullscreen></iframe>
+        </div>
 
         <!-- Bloque de Venta Directa -->
         <div class="pricing-box">
-            <div class="price">Adquiere la Versión Pro<br><span>Pago único (Acceso de por vida)</span></div>
+            <div class="price">Acceso de por vida</div>
+            <div class="price-sub">🎉 Un solo pago, sin suscripciones mensuales</div>
             
-            <!-- ENLACE DE PAYPAL REESTRUCTURADO PARA CARGAR EN LA MISMA PESTAÑA -->
-            <a href="https://www.paypal.com/ncp/payment/Q3BFSCX229V7G" class="btn-payment btn-paypal">Pagar con PayPal / Tarjeta</a>
+            <!-- ENLACE DE PAYPAL OPERATIVO -->
+            <a href="https://paypal.com" class="btn-payment btn-paypal">Pagar con PayPal / Tarjeta Internacional</a>
             
-            <!-- TU ENLACE REAL DE EPAYCO INTEGRADO Y REESTRUCTURADO -->
+            <!-- ENLACE DE EPAYCO REGISTRADO -->
             <a href="https://payco.link" class="btn-payment btn-pse">Pagar con PSE (Colombia)</a>
             
-            <p style="font-size: 0.85rem; margin: 15px 0 0 0; color: #95a5a6;">🔒 Compra 100% segura. Tras el pago, recibirás el enlace de descarga directa del instalador APK.</p>
+            <p style="font-size: 0.85rem; margin: 15px 0 0 0; color: #95a5a6;">🔒 Compra 100% segura. Tras procesar el pago, el sistema activará de inmediato la descarga de tu instalador oficial de Android.</p>
         </div>
 
+        <!-- Beneficios Clave -->
         <div class="features">
-            <div class="feature-item">✅ Registro de gastos rápido</div>
-            <div class="feature-item">📊 Gráficos inteligentes</div>
-            <div class="feature-item">🔒 Datos 100% privados (Sin Nube)</div>
-            <div class="feature-item">💰 Control de presupuestos ilimitados</div>
+            <div class="feature-item">⚡ <strong>Registro en Segundos:</strong> Diseñado para que anotes tus gastos del día a día sin perder tiempo.</div>
+            <div class="feature-item">📊 <strong>Gráficos Inteligentes:</strong> Entiende visualmente en qué categorías se te va más dinero.</div>
+            <div class="feature-item">🔒 <strong>Privacidad Absoluta:</strong> Tus datos financieros se quedan en tu celular, no en servidores externos.</div>
+            <div class="feature-item">💰 <strong>Presupuestos Ilimitados:</strong> Crea metas de ahorro mensuales para viajes, deudas o compras.</div>
         </div>
 
+        <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FAQS) - CLAVE PARA GENERAR CONFIANZA -->
+        <div class="faq-section">
+            <h3>Preguntas Frecuentes</h3>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo se instala la aplicación en mi celular?</div>
+                <div class="faq-answer">Al realizar el pago, se descargará un archivo ejecutable oficial con formato <strong>.APK</strong>. Solo debes abrirlo en tu dispositivo Android y aceptar el permiso de instalación directa. Es un proceso 100% seguro.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Por qué es un pago único?</div>
+                <div class="faq-answer">Creemos que el control de tu dinero no debería representar un gasto fijo mensual. Pagas una sola vez y tienes derecho a usar la aplicación de forma ilimitada para siempre, incluyendo futuras actualizaciones técnicas.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Qué pasa si cambio de celular?</div>
+                <div class="faq-answer">No te preocupes. Guardando tu comprobante de compra o escribiéndonos a nuestro canal de soporte técnico con tu correo de registro, te enviaremos un nuevo enlace de instalación sin costo adicional.</div>
+            </div>
+        </div>
+
+        <!-- Pie de página legal y soporte -->
         <div class="footer">
             <p>
                 <a href="privacidad.html">Política de Privacidad</a> | 
-                <a href="mailto:mifinanzaspro@gmail.com">Soporte técnico</a>
+                <a href="mailto:mifinanzaspro@gmail.com">Soporte Técnico Autorizado</a>
             </p>
-            <p>&copy; 2026 Mi Finanzas Pro. Distribución directa e independiente.</p>
+            <p>&copy; 2026 Mi Finanzas Pro. Distribución directa, segura y protegida.</p>
         </div>
     </div>
 
 </body>
 </html>
+
 
