@@ -54,20 +54,23 @@
             margin-bottom: 30px;
         }
 
-        /* NUEVA SECCIÓN DE VIDEO */
-        .video-box {
-            background: #000;
-            width: 100%;
-            aspect-ratio: 16 / 9;
+        /* NUEVO BOTÓN REPRODUCTOR DE VIDEO SEGURO (INMUNE A ERRORES) */
+        .btn-video {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+            font-weight: bold;
             border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            display: block;
             margin-bottom: 30px;
-            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            font-size: 1.1rem;
+            transition: transform 0.2s;
         }
-        .video-box iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+        .btn-video:hover {
+            transform: translateY(-2px);
+            background-color: #2c3e50;
         }
 
         /* Caja de Precios y Compra */
@@ -134,7 +137,7 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
 
-        /* NUEVA SECCIÓN DE PREGUNTAS FRECUENTES */
+        /* SECCIÓN DE PREGUNTAS FRECUENTES TOTALMENTE ESTABLE */
         .faq-container {
             background: white;
             padding: 25px;
@@ -189,12 +192,10 @@
         <h1>Mi Finanzas Pro</h1>
         <p>La herramienta definitiva para organizar tus gastos, ahorrar más y alcanzar tus metas financieras con seguridad y privacidad.</p>
 
-        <!-- SECCIÓN DE VIDEO AGREGADA -->
-        <div class="video-box">
-            <iframe src="https://youtube.com" allowfullscreen></iframe>
-        </div>
+        <!-- BOTÓN DE VIDEO SEGURO (REEMPLAZA EL LINK DE YOUTUBE CUANDO LO TENGAS) -->
+        <a href="https://youtube.com" target="_blank" class="btn-video">▶️ Ver Video de Demostración (Cómo funciona la App)</a>
 
-        <!-- Bloque de Venta Directa (TAL CUAL COMO LO TENÍAS CONFIGURADO) -->
+        <!-- Bloque de Venta Directa (TUS BOTONES ORIGINALES EN FIRME) -->
         <div class="pricing-box">
             <div class="price">Adquiere la Versión Pro<br><span>Pago único (Acceso de por vida)</span></div>
             
@@ -214,7 +215,7 @@
             <div class="feature-item">💰 Control de presupuestos ilimitados</div>
         </div>
 
-        <!-- SECCIÓN DE PREGUNTAS FRECUENTES AGREGADA -->
+        <!-- SECCIÓN DE PREGUNTAS FRECUENTES -->
         <div class="faq-container">
             <h3>Preguntas Frecuentes</h3>
             <div class="faq-item">
@@ -238,5 +239,4 @@
 
 </body>
 </html>
-
 
