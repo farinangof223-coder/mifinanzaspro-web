@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Finanzas Pro - Controla tu dinero fácilmente</title>
+    <title>Finanzas JL - Controla tu dinero fácilmente</title>
 
     <style>
         :root {
@@ -13,8 +13,6 @@
             --text-color: #5f6c7b;
             --light-bg: #f4f7f6;
             --white: #ffffff;
-            --paypal-color: #0070ba;
-            --pse-color: #ff6b00;
             --shadow: 0 15px 35px rgba(0,0,0,0.08);
         }
 
@@ -92,7 +90,7 @@
 
         .btn {
             display: inline-block;
-            padding: 15px 26px;
+            padding: 15px 30px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
@@ -104,12 +102,6 @@
             background: var(--primary-color);
             color: white;
             box-shadow: 0 8px 20px rgba(46, 204, 113, 0.35);
-        }
-
-        .btn-secondary {
-            background: white;
-            color: var(--dark-color);
-            border: 1px solid #dde5e8;
         }
 
         .btn:hover {
@@ -190,7 +182,7 @@
             line-height: 1.5;
         }
 
-        .pricing-box {
+        .download-box {
             background: white;
             padding: 35px;
             border-radius: 28px;
@@ -200,53 +192,22 @@
             text-align: center;
         }
 
-        .price-title {
+        .download-title {
             font-size: 1.6rem;
             font-weight: 800;
             margin-bottom: 8px;
         }
 
-        .price-subtitle {
+        .download-subtitle {
             color: var(--text-color);
             margin-bottom: 25px;
-        }
-
-        .payment-buttons {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 14px;
-            margin-bottom: 18px;
-        }
-
-        .btn-payment {
-            color: white;
-            padding: 16px 24px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 16px;
-            transition: transform 0.2s, opacity 0.2s;
-            display: block;
-            font-size: 1rem;
-            box-shadow: 0 5px 16px rgba(0,0,0,0.12);
-        }
-
-        .btn-payment:hover {
-            transform: translateY(-3px);
-            opacity: 0.9;
-        }
-
-        .btn-paypal {
-            background-color: var(--paypal-color);
-        }
-
-        .btn-pse {
-            background-color: var(--pse-color);
         }
 
         .security-message {
             font-size: 0.9rem;
             color: #7f8c8d;
             line-height: 1.5;
+            margin-top: 18px;
         }
 
         .footer {
@@ -310,16 +271,11 @@
                 grid-template-columns: 1fr;
             }
 
-            .payment-buttons {
-                grid-template-columns: 1fr;
-            }
-
-            .pricing-box {
+            .download-box {
                 padding: 25px 18px;
             }
 
-            .btn,
-            .btn-payment {
+            .btn {
                 width: 100%;
             }
         }
@@ -332,24 +288,25 @@
 
         <section class="hero">
             <div class="hero-content">
-                <img src="logo.png" alt="Mi Finanzas Pro Logo" class="logo">
+                <img src="logo.png" alt="Finanzas JL Logo" class="logo">
 
                 <div class="badge">App de control financiero personal</div>
 
                 <h1>Organiza tu dinero de forma simple y segura</h1>
 
                 <p class="subtitle">
-                    Mi Finanzas Pro te ayuda a registrar tus gastos, controlar presupuestos,
-                    visualizar tus finanzas y tomar mejores decisiones sin depender de la nube.
+                    Finanzas JL te ayuda a registrar tus gastos, controlar presupuestos,
+                    visualizar tus finanzas y tomar mejores decisiones desde tu celular.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#comprar" class="btn btn-primary">Comprar ahora</a>
-                    <a href="#video-demo" class="btn btn-secondary">Ver demostración</a>
+                    <a href="finanzas-jl.apk" class="btn btn-primary" download>
+                        Descargar app
+                    </a>
                 </div>
 
                 <p class="trust-text">
-                    🔒 Pago seguro · Acceso de por vida · Instalador APK directo
+                    🔒 Descarga segura · App privada · Instalador APK directo
                 </p>
             </div>
 
@@ -367,7 +324,7 @@
                     <!-- 
                     <iframe 
                         src="https://www.youtube.com/embed/TU_ID_DE_VIDEO"
-                        title="Demo Mi Finanzas Pro"
+                        title="Demo Finanzas JL"
                         allowfullscreen>
                     </iframe>
                     -->
@@ -408,23 +365,20 @@
             </div>
         </section>
 
-        <section class="pricing-box" id="comprar">
-            <div class="price-title">Adquiere la Versión Pro</div>
-            <p class="price-subtitle">Pago único · Acceso de por vida · Sin suscripciones</p>
+        <section class="download-box" id="descargar">
+            <div class="download-title">Descarga Finanzas JL</div>
 
-            <div class="payment-buttons">
-                <a href="https://www.paypal.com/ncp/payment/Q3BFSCX229V7G" class="btn-payment btn-paypal">
-                    PayPal / Tarjeta
-                </a>
+            <p class="download-subtitle">
+                Instala la app en tu dispositivo Android y empieza a organizar tus finanzas personales.
+            </p>
 
-                <a href="https://payco.link" class="btn-payment btn-pse">
-                    PSE Colombia
-                </a>
-            </div>
+            <a href="finanzas-jl.apk" class="btn btn-primary" download>
+                Descargar app
+            </a>
 
             <p class="security-message">
-                🔒 Compra 100% segura. Después del pago recibirás el enlace de descarga directa
-                del instalador APK.
+                🔒 Descarga directa del instalador APK. Recuerda permitir la instalación desde fuentes externas
+                si tu dispositivo Android lo solicita.
             </p>
         </section>
 
@@ -434,11 +388,10 @@
                 <a href="mailto:mifinanzaspro@gmail.com">Soporte técnico</a>
             </p>
 
-            <p>&copy; 2026 Mi Finanzas Pro. Distribución directa e independiente.</p>
+            <p>&copy; 2026 Finanzas JL. Distribución directa e independiente.</p>
         </footer>
 
     </main>
 
 </body>
 </html>
-
